@@ -217,11 +217,44 @@ body {
     margin-top: 0;
 }
 
+.social-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.social-link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-link:hover,
+.social-link:focus {
+    background-color: var(--accent-color);
+}
+
+.social-icon {
+    fill: #AFB1B8;
+}
+
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+    fill: #FFFFFF;
+
+}
+
 .job-title {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 16px;
 }
 
 .project-name {
@@ -361,6 +394,12 @@ body {
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
+
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/bg.jpg");
+    background-color: #C4C4C4;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .main-title {
@@ -375,7 +414,7 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    /* color: var(--primary-text-color-theme-dark); */
+    color: var(--primary-text-color-theme-dark);
 }
 /* ========== Hero ========== */
 
@@ -398,7 +437,7 @@ body {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    /* color: var(--primary-text-color-theme-dark); */
+    color: var(--primary-text-color-theme-dark);
 }  
 
 .address:hover,
@@ -416,7 +455,7 @@ body {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    /* color: var(--secondary-text-color-theme-dark); */
+    color: var(--secondary-text-color-theme-dark);
 }
 
 .contact-footer:hover,
@@ -427,5 +466,6 @@ body {
 .footer-container {
     padding-top: 60px;
     padding-bottom: 60px;
+    background-color: #2F303A;
 }
 /* ========== Footer ========== */
