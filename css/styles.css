@@ -50,11 +50,14 @@ body {
 }
 
 .section-team,
-.section-portfolio {
+.section-portfolio,
+.section-work {
     padding-bottom: 94px;
 }
 
-
+.section-team {
+    background-color: #F5F4FA;
+}
 
 .container {
     width: 1200px;
@@ -173,6 +176,8 @@ body {
     margin-bottom: 0;
 }
 
+
+
 .work-img {
     display: flex;
     flex-wrap: wrap;
@@ -239,7 +244,7 @@ body {
     background-color: var(--accent-color);
 }
 
-.social-icon {
+.social-link .social-icon {
     fill: #AFB1B8;
 }
 
@@ -263,6 +268,39 @@ body {
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--primary-text-color-theme-light);
+}
+
+.customers {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color-theme-light);
+    margin-bottom: 50px;
+}
+
+.our-customers {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 103px;
+}
+
+
+.our-customers .item {
+    padding: 16px 32px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.customers-link .customers-icon {
+    fill: #AFB1B8;
+}
+
+.customers-link:hover .customers-icon,
+.customers-link:focus .customers-icon{
+    fill: var(--accent-color);
 }
 
 .project {
@@ -304,8 +342,6 @@ body {
 
 .card-content {
     padding: 20px 24px;
-    border: 1px solid var(--border-card);
-    background-color: var(--primary-text-color-theme-dark);
 
 }
 
@@ -386,6 +422,8 @@ body {
 .contact a:focus {
     color: var(--accent-color);
 }
+
+
 /* ========== Header ========== */
 
 /* ========== Hero ========== */
@@ -468,4 +506,54 @@ body {
     padding-bottom: 60px;
     background-color: #2F303A;
 }
+
+.footer-info {
+    display: flex;
+    align-items: baseline;
+
+}
+
+.join-in-item {
+    display: block;
+    width: 206px;
+    margin-left: 70px;
+    
+
+}
+
+.join-in {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-text-color-theme-dark);
+}
+
+.social-list.list {
+    margin-top: 20px;
+    }
+
+.social-link-footer {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-link-footer:hover,
+.social-link-footer:focus {
+    background-color: var(--accent-color);
+}
+
+.social-link-footer .social-icon {
+    fill: #FFFFFF;
+}
+
+
+
 /* ========== Footer ========== */
