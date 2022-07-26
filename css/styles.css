@@ -138,6 +138,7 @@ body {
 .filter-btm:focus {
     color: #FFFFFF;
     background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .benefits-list {
@@ -167,6 +168,20 @@ body {
     margin-bottom: 10px;
 }
 
+.benefits-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    left: 220px;
+    top: 774px;
+    
+    background: #F5F4FA;
+    border-radius: 4px;
+
+    margin-bottom: 30px;
+}
 .benefits {
     font-size: 14px;
     line-height: 1.71;
@@ -208,6 +223,7 @@ body {
 
 .card-team {
     padding: var(--card-set-gap);
+    background: #FFFFFF;
 }
 
 .employee-name {
@@ -284,14 +300,22 @@ body {
     display: flex;
     justify-content: center;
     gap: 30px;
-    margin-bottom: 103px;
+    
 }
 
+.customers-list {
+    padding-bottom: 103px;
+}
 
 .our-customers .item {
     padding: 16px 32px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
+}
+
+.our-customers .item:hover ,
+.our-customers .item:focus  {
+    border: 1px solid var(--accent-color);
 }
 
 .customers-link .customers-icon {
@@ -301,12 +325,14 @@ body {
 .customers-link:hover .customers-icon,
 .customers-link:focus .customers-icon{
     fill: var(--accent-color);
+    
 }
 
 .project {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
+    color: var(--secondary-text-color-theme-light);
 }
 
 .main-portfolio {
@@ -329,6 +355,9 @@ body {
     margin-right: var(--card-set-gap);
     margin-bottom: var(--card-set-gap);
     flex-wrap: wrap;
+
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
 }
 
 
@@ -338,6 +367,11 @@ body {
 
 .portfolio-link .item:nth-last-child(-n + 3) {
     margin-bottom: 0;
+}
+
+.portfolio-link .item:hover,
+.portfolio-link .item:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .card-content {
@@ -403,6 +437,10 @@ body {
 
 .link-tel {
     margin-left: 50px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
 }
 
 .contact a {
@@ -413,15 +451,35 @@ body {
     letter-spacing: 0.02em;
     color: var(--secondary-text-color-theme-light);
 
-    display: block;
+    display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
+    align-items: center;
+    justify-content: center;
 }
 
 .contact a:hover,
 .contact a:focus {
     color: var(--accent-color);
 }
+
+.contact-icon {
+    display: flex;
+    margin-right: 10px;
+    fill: var(--secondary-text-color-theme-light);
+}
+
+/* .contact a.contact-icon:hover,
+.contact a.contact-icon:focus {
+    fill: var(--accent-color);
+} */
+
+.contact-link:hover .contact-icon,
+.contact-link:focus .contact-icon {
+    fill: var(--accent-color);
+
+}
+
 
 
 /* ========== Header ========== */
